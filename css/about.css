@@ -1,0 +1,852 @@
+/*Basic font*/
+@import url('https://fonts.googleapis.com/css2?family=News+Cycle:wght@700&display=swap');
+
+/*Basic style for all devices*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    box-sizing: border-box;
+    text-decoration: none; 
+    font-family: 'News Cycle', sans-serif;
+}
+
+h3{
+    color: rgb(8, 41, 114);
+}
+
+button{
+    background-color: rgb(8, 41, 114); 
+    color: white; 
+    border-color: rgb(8, 41, 114);
+}
+
+#row-p20-links a{
+  font-size: 18px;
+  color : white;
+}
+
+/*Navbar Links*/
+#navbarNav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 6px;
+  }
+
+  #navbarNav ul li a:hover, .carousel-control-prev:hover,
+   .carousel-control-next:hover {
+    color: rgb(8, 41, 114);
+  }
+
+  .info-nav #ul-info-nav li a:hover{
+    color: rgb(8, 41, 114);
+  }
+ 
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    /*Hide elements on small screens*/
+    .hr-nav-split, .info-nav, #div-ontop-carousel-lg
+    ,#div-ontop-carousel h1, #Service2, #About-lg{
+      display: none;
+    }
+
+    /*Logo*/
+  .logo, logo-link{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: 2px;
+    top: 5px;
+    cursor: pointer;
+  }
+
+  /*Navigation*/
+  #nav{
+    position: absolute; 
+    top: 0px; 
+    right:0; 
+    text-align: right; 
+    z-index:2;     
+  }
+
+  /*Nav-links*/
+  #nav .navbar-nav li a {
+    color: white;
+    cursor: pointer;
+  }
+
+  /*Nav-links hover*/
+  #nav .navbar-nav li a:hover {
+    color: rgb(8, 41, 114);
+    cursor: pointer;
+  }
+
+  /*Dropdown*/
+  li ul.dropdown{
+    min-width: 100%;
+    background: transparent;
+    display: none;
+  }
+
+  li:hover ul.dropdown {
+    display:inline-block; /* Display the dropdown */
+  }
+
+  li ul.dropdown li {
+      display: inline-block;
+  }
+
+  /*Hamburger Icon*/
+  #hamburger{
+      top: 5px;
+      right: 3px;
+      text-align: right;
+      position: absolute;
+      color: white;
+  }
+
+  /*Text on Carousel Image*/
+  #div-ontop-carousel{
+    position: absolute; 
+    top: 25%; 
+    z-index: 1;
+    color: white;
+  }
+
+  /*Heading on Carousel*/
+  #div-ontop-carousel h4{
+    font-size: 20px;
+  }
+
+  /*Paragraph on Carousel*/
+  #div-ontop-carousel p{
+    font-size: 13px;
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  /*Thanks to bootstap for taking care of
+  the about, service and contact us on small devices*/
+
+  /*Contact Us*/
+  #form-col{
+    background: rgb(8, 41, 114);
+    padding-top: 15px;
+    padding-bottom: 25px;
+  }
+
+  #form-col h3{
+    color:white;
+    padding-bottom: 15px;
+  }
+
+  .col-md-2{
+    color:rgb(8, 41, 114);
+  }
+
+  /*Logo-fooer*/    
+  .row .col-md-6 #footer-logo{
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+    padding-bottom: 10px;
+}
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    /*Top Nav*/
+  .info-nav{
+    position: absolute; 
+    top: 10px; 
+    right:0; 
+    text-align: right; 
+    margin-right: 2%; 
+  }
+
+  #ul-info-nav{
+    display: inline-flex; list-style-type: none;
+  }
+
+  /*Top nav-links*/
+  .info-nav #ul-info-nav li{
+    padding-left: 22px;
+  }
+
+  /*Top nav-links:hover*/
+ .info-nav #ul-info-nav li a{
+    cursor: pointer;
+    color:white; 
+    text-decoration: none;
+    z-index: 3; 
+    position: relative ;
+    font-family: 'News Cycle', sans-serif;
+    text-rendering: optimizeLegibility;
+  }
+
+
+  /*Logo*/
+  .logo, logo-link{
+      height: 50px;
+      width: 50px;
+      position: absolute;
+      left: 2px;
+      top: 5px;
+      cursor: pointer;
+    }
+
+    /*Navigation*/
+    #nav{
+      position: absolute; 
+      top: 30px; 
+      right:0; 
+      text-align: right; 
+      z-index:2;     
+    }
+
+    /*Nav-links*/
+    #nav .navbar-nav li a {
+      color: white;
+      cursor: pointer;
+    }
+
+    /*Nav-links:hover*/
+    #nav .navbar-nav li a:hover {
+      color: rgb(8, 41, 114);
+      cursor: pointer;
+    }
+
+    /*Hamburger icon*/
+    #hamburger{
+        top: 5px;
+        right: 3px;
+        text-align: right;
+        position: absolute;
+        color: white;
+    }
+
+    /*div-ontop-carousel*/
+    #div-ontop-carousel{
+      position: absolute; 
+      top: 25%; 
+      z-index: 1;
+      color: white;
+    }
+
+    /*Paragraph on Carousel*/
+    #div-ontop-carousel p{
+      font-size: smaller;
+      font-weight: 400;
+      color: white;
+      padding-left: 4px;
+      padding-right: 4px;
+    }
+
+    #row-p20-links{
+      padding-top: 20px;
+      display: list-item;
+      list-style: none;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+  /*Carousel Images*/
+  #nav-img{
+    position: relative; 
+    top:0px; 
+    height: 420px;
+  }
+
+   /*Top Nav*/
+  .info-nav{
+    position: absolute; 
+    top: 10px; 
+    right:0; 
+    text-align: right; 
+    margin-right: 2%; 
+  }
+
+  #ul-info-nav{
+    display: inline-flex; list-style-type: none;
+  }
+
+  /*Top Nav-links*/
+  .info-nav #ul-info-nav li{ 
+    padding-left: 22px;
+  }
+
+  /*Top Nav-links:hover*/
+ .info-nav #ul-info-nav li a{
+    cursor: pointer;
+    color:white; 
+    text-decoration: none;
+    z-index: 3; 
+    position: relative ;
+    font-family: 'News Cycle', sans-serif;
+    text-rendering: optimizeLegibility;
+  }
+
+  /*Logo, logo-links*/
+    .logo, logo-link{
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    cursor: pointer;
+    }
+
+    /*Navigation*/
+    #nav{
+        margin-top: 4%;
+        right: 1%;
+        text-align: right;
+        position: absolute;
+        color: white;
+        font-family: 'News Cycle', sans-serif;
+    }
+
+    /*Nav-links*/
+    #nav .navbar-nav li a {
+    color: white;
+    cursor: pointer;
+    text-align: right;
+    }
+
+    /*Nav-links:hover*/
+    #nav .navbar-nav li a:hover {
+    color: rgb(8, 41, 114);
+    cursor: pointer;
+    }
+
+    /*Dropdown*/
+  li ul.dropdown{
+    min-width: 100%;
+    background: transparent;
+    display: none;
+  }
+
+  li:hover ul.dropdown {
+    display:inline-block; /* Display the dropdown */
+  }
+
+  li ul.dropdown li {
+      display: inline-block;
+  }
+
+    /*div-ontop-carousel*/
+    #div-ontop-carousel{
+        position: absolute; 
+        top: 25%; 
+        z-index: 1;
+        color: white;
+        font-size: xx-large;
+        font-weight: bolder;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    /*paragraph on carousel*/
+    #div-ontop-carousel p{
+        font-size: smaller;
+        font-weight: 400;
+        color: white;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    
+    /*About Section*/
+    #About{
+      box-shadow: 0 10px 10px -5px;
+      max-width: 100%;
+      background: whitesmoke;
+      max-height: fit-content;
+      padding-bottom: 50px;
+  }
+
+  #About h3{
+      padding-top : 50px;
+      padding-left: 200px;
+      padding-right: 200px;
+      padding-bottom: 10px;
+  }
+
+  #About p{
+      padding-left: 150px;
+      padding-right: 150px;
+      padding-bottom: 10px;
+  }
+
+  /*Service Section*/
+  #Service h3{
+      padding-top : 40px;
+      padding-left: 200px;
+      padding-right: 200px;
+      padding-bottom: 20px;
+  }
+
+  #Service .row{
+      padding-bottom: 30px;
+  }
+
+  #Service .row .col-md-8{
+      padding: 0px 0px 0px;
+      margin: 0px;
+      background-color: whitesmoke;
+      box-shadow: 0 10px 10px -5px;
+  }
+
+  #Service .row .col-md-8 .card-body .card-text{
+    padding: 20px;
+  }
+
+
+  #Service .row .col-md-6 img{
+      height: 600px;
+      max-width: 350px;
+      margin: 0px;
+      border-radius: 0px;
+  }
+
+  /*Contact Us*/
+  #Contact-Group{
+      background: rgb(8, 41, 114);
+      color: white;
+      height: fit-content;
+  }
+
+  #Contact-Group h3{
+      color:white;
+      padding-bottom: 20px;
+  }
+  
+
+  #form-col{
+      padding-top: 30px;
+      padding-left: 30px;
+      padding-right: 70px;
+      padding-bottom: 40px;
+      left:0px;
+  }
+
+  /*Map*/
+  .col-md-4 iframe{ 
+    padding: 0px 0px 0px 0px;
+    margin-top: 8px; width: 80%; height: 250px; border: 3px solid whitesmoke;
+  } 
+
+  .col-md-2 {
+    padding: 0px 0px 0px 0px;
+  }
+
+  #row-p20{
+    padding-top: 20px;
+  }
+
+
+  .vl {
+      border-left: 10px solid white;
+      height:505px;
+      margin-left: 48%;
+      position: absolute;
+  }
+
+  #Contact-Group .col-md-2{
+    padding-top: 200px;
+    padding-right: 60px;
+    padding-bottom: 10px;
+  }
+
+  /*footer Section*/
+  .row .col-md-6 h4{
+    color: white; 
+    text-decoration: wavy;
+    padding-top: 30px;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  /*Logo-fooer*/    
+  .row .col-md-6 #footer-logo{
+      height: 100px;
+      width: 100px;
+      cursor: pointer;
+  }
+
+  #footer-ql-heading{
+    font-size: 30px;
+  }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    h4{
+        font-size: 45px;
+      }
+    
+      p{
+        font-size: 20px;
+      }
+
+     /*Company Name on Carousel*/
+     #div-ontop-carousel-lg .carousel-h1{
+        font-size:xx-large;
+      }
+  
+      #div-ontop-carousel-lg .carousel-p{
+        color:white;
+        font-size: medium;
+      }
+  
+    .info-nav{
+      position: absolute; 
+      top: 10px; 
+      right:0; 
+      text-align: right; 
+      margin-right: 2%; 
+    }
+  
+    #ul-info-nav{
+      display: inline-flex; list-style-type: none;
+    }
+  
+    .info-nav #ul-info-nav li{
+      padding-left: 22px;
+    }
+  
+   .info-nav #ul-info-nav li a{
+      cursor: pointer;
+      color:white; 
+      text-decoration: none;
+      z-index: 3; 
+      position: relative ;
+      font-family: 'News Cycle', sans-serif;
+      text-rendering: optimizeLegibility;
+    }
+  
+    .logo, logo-link{
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    cursor: pointer;
+    }
+  
+    #nav{
+    top: 0px;
+    right: 3px;
+    text-align: right;
+    position: absolute;
+    color: white;
+    font-family: 'News Cycle', sans-serif;
+    }
+  
+    #nav .navbar-nav li a {
+    color: white;
+    cursor: pointer;
+    padding-right: 50px;
+    }
+  
+    #nav .navbar-nav li a:hover {
+    color: rgb(8, 41, 114);
+    cursor: pointer;
+    }
+
+    /*Dropdown*/
+    li ul.dropdown{
+      min-width: 100%;
+      background: transparent;
+      display: none;
+      min-height: fit-content;
+      left: 40px;
+      z-index: 4;
+    }
+
+    li:hover ul.dropdown {
+      display:flex;/* Display the dropdown */
+      padding: 0;
+      align-content: flex-end;
+    }
+
+    li ul.dropdown li {
+      display:flex;
+      align-content: flex-end;
+      right: 0px;
+    }
+  
+    /*Map*/
+    .col-md-4 iframe{
+      margin-left: 1%; 
+      margin-top: 8px; width: 90%; height: 350px; border: 3px solid whitesmoke;
+    } 
+  
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    h3{
+        font-size: 40px;
+    }
+
+    p{
+        font-size: 20px;
+    }
+
+    li a, .col-md-2 a{
+        font-size: 18px;
+        color: white;
+    }
+
+    /*Carousel Images*/
+    #nav-img{
+      position: relative; 
+      top:0px; 
+      height: 150px;
+    }
+
+    /*Top Navigation*/
+      .info-nav{
+        position: absolute; 
+        top: 10px; 
+        right:0; 
+        text-align: right; 
+        margin-right: 2%; 
+  
+      }
+  
+      #ul-info-nav{
+        display: inline-flex; list-style-type: none;
+      }
+  
+      .info-nav #ul-info-nav li{
+        padding-left: 22px;
+      }
+  
+      .info-nav #ul-info-nav li a{
+          cursor: pointer;
+          color:white; 
+          text-decoration: none;
+          z-index: 3; 
+          position: relative ;
+          font-family: 'News Cycle', sans-serif;
+          text-rendering: optimizeLegibility;
+        }
+  
+    /*Logo*/    
+        .logo, logo-link{
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        left: 2px;
+        top: 5px;
+        cursor: pointer;
+        }
+  
+    /*Bottom Navigation*/
+        #nav{
+        top: 0px;
+        right: 3px;
+        text-align: right;
+        position: absolute;
+        color: white;
+        font-family: 'News Cycle', sans-serif;
+        }
+  
+        #nav .navbar-nav li a {
+        color: white;
+        cursor: pointer;
+        padding-right: 70px;
+        }
+  
+        #nav .navbar-nav li a:hover {
+        color: rgb(8, 41, 114);
+        cursor: pointer;
+        }
+
+      /*Dropdown*/
+      li ul.dropdown{
+        min-width: 100%;
+        background: transparent;
+        display: none;
+        min-height: fit-content;
+        left: 40px;
+        z-index: 4;
+      }
+
+      li:hover ul.dropdown {
+        display:flex;/* Display the dropdown */
+        padding: 0;
+        align-content: flex-end;
+      }
+
+      li ul.dropdown li {
+        display:flex;
+        align-content: flex-end;
+        right: 0px;
+      }
+
+        /*About Section*/
+        #About{
+            box-shadow: 0 10px 10px -5px;
+            max-width: 100%;
+            background: whitesmoke;
+            max-height: fit-content;
+            padding-bottom: 50px;
+        }
+
+        #About h3{
+            padding-top : 50px;
+            padding-left: 200px;
+            padding-right: 200px;
+            padding-bottom: 10px;
+        }
+
+        #About p{
+            padding-left: 200px;
+            padding-right: 200px;
+            padding-bottom: 10px;
+        }
+
+        #row1{
+          border-top: none;
+          border-left: none;
+          border-bottom: 10px solid rgb(8, 41, 114);
+          border-radius: 20px;
+          left: 3%;
+          padding-right: 25px;
+        }
+
+        #card1{
+          left: 2%;
+          padding-right: 2px;
+          border-right: 5px solid rgb(8, 41, 114);
+          border-radius: 20px;
+          border-left: none;
+          border-bottom: none;
+          background-color: whitesmoke;
+        }
+
+        #card2{
+          border-right: 5px solid rgb(8, 41, 114);
+          border-left: 5px solid rgb(8, 41, 114);
+          border-radius: 20px;
+          border-bottom: none;
+          background-color: whitesmoke;
+        }
+
+        #card3{
+          right: 2%;
+          padding-left: 5px;
+          border-left: 5px solid rgb(8, 41, 114);
+          border-radius: 20px;
+          border-right: none;
+          border-bottom: none;
+          background-color: whitesmoke;
+        }
+
+        /*Service Section*/
+        #Service h3{
+            padding-top : 40px;
+            padding-left: 200px;
+            padding-right: 200px;
+            padding-bottom: 30px;
+        }
+
+        #Service .row{
+            padding-bottom: 50px;
+        }
+
+        #Service .row .col-md-8{
+            padding: 0px 0px 0px;
+            margin: 0px;
+            background-color: whitesmoke;
+            box-shadow: 0 10px 10px -5px;
+        }
+
+        #Service .row .col-md-8 .card-body .card-text{
+          padding: 50px;
+        }
+
+ 
+        #Service .row .col-md-6 img{
+            height: 400px;
+            max-width: 350px;
+            margin: 0px;
+            border-radius: 0px;
+        }
+
+        /*Contact Us*/
+        #Contact-Group{
+            background: rgb(8, 41, 114);
+            color: white;
+            height: fit-content;
+        }
+
+        #Contact-Group h3{
+            color:white;
+            padding-bottom: 20px;
+        }
+        
+
+        #form-col{
+            padding-top: 30px;
+            padding-left: 30px;
+            padding-right: 70px;
+            padding-bottom: 40px;
+            left:0px;
+        }
+
+        /*Map*/
+        .col-md-4 iframe{
+          margin-left: 1%; margin-top: 8px; width: 80%; height: 350px; border: 3px solid whitesmoke;
+        } 
+
+        #row-p20{padding-top: 20px;}
+
+        #row-p20-links{
+          padding-top: 20px;
+          display:inline-flex;
+          color: white;
+        }
+
+        .vl {
+            border-left: 10px solid white;
+            height:505px;
+            margin-left: 48%;
+            position: absolute;
+        }
+
+        #Contact-Group .col-md-2{
+          padding-top: 200px;
+          padding-right: 60px;
+          padding-bottom: 10px;
+        }
+
+        /*Logo-fooer*/    
+        .row .col-md-6 #footer-logo{
+            height: 100px;
+            width: 100px;
+            cursor: pointer;
+            padding-bottom: 5px;
+        }
+
+        #footer-ql-heading{
+          font-size: 35px;
+        }   
+  
+}

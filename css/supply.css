@@ -1,0 +1,430 @@
+/*Basic font*/
+@import url('https://fonts.googleapis.com/css2?family=News+Cycle:wght@700&display=swap');
+
+/*Basic style for all devices*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: black;
+    box-sizing: border-box;
+    text-decoration: none; 
+    font-family: 'News Cycle', sans-serif;
+}
+
+h3{
+    color: rgb(8, 41, 114);
+}
+
+button{
+    background-color: rgb(8, 41, 114); 
+    color: white; 
+    border-color: rgb(8, 41, 114);
+}
+
+/*Navbar Links*/
+#navbarNav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 6px;
+  }
+
+  #navbarNav ul li a:hover, .carousel-control-prev:hover,
+   .carousel-control-next:hover {
+    color: rgb(8, 41, 114);
+  }
+
+  .info-nav #ul-info-nav li a:hover{
+    color: rgb(8, 41, 114);
+  }
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    /*Hide elements on small screens*/
+    .hr-nav-split, .info-nav, #div-ontop-carousel-lg
+    ,#div-ontop-carousel h1, #Service2, #About-lg{
+      display: none;
+    }
+
+    /*Logo*/
+  .logo, logo-link{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: 2px;
+    top: 5px;
+    cursor: pointer;
+  }
+
+  /*Navigation*/
+  #nav{
+    position: absolute; 
+    top: 0px; 
+    right:0; 
+    text-align: right; 
+    z-index:2;     
+  }
+
+  /*Nav-links*/
+  #nav .navbar-nav li a {
+    color: white;
+    cursor: pointer;
+  }
+
+  /*Nav-links hover*/
+  #nav .navbar-nav li a:hover {
+    color: rgb(8, 41, 114);
+    cursor: pointer;
+  }
+
+  /*Dropdown*/
+  li ul.dropdown{
+    min-width: 100%;
+    background: transparent;
+    display: none;
+  }
+
+  li:hover ul.dropdown {
+    display:inline-block; /* Display the dropdown */
+  }
+
+  li ul.dropdown li {
+      display: inline-block;
+  }
+
+  /*Hamburger Icon*/
+  #hamburger{
+      top: 5px;
+      right: 3px;
+      text-align: right;
+      position: absolute;
+      color: white;
+  }
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    /*Top Nav*/
+  .info-nav{
+    position: absolute; 
+    top: 10px; 
+    right:0; 
+    text-align: right; 
+    margin-right: 2%; 
+  }
+
+  #ul-info-nav{
+    display: inline-flex; list-style-type: none;
+  }
+
+  /*Top nav-links*/
+  .info-nav #ul-info-nav li{
+    padding-left: 22px;
+  }
+
+  /*Top nav-links:hover*/
+ .info-nav #ul-info-nav li a{
+    cursor: pointer;
+    color:white; 
+    text-decoration: none;
+    z-index: 3; 
+    position: relative ;
+    font-family: 'News Cycle', sans-serif;
+    text-rendering: optimizeLegibility;
+  }
+
+
+  /*Logo*/
+  .logo, logo-link{
+      height: 50px;
+      width: 50px;
+      position: absolute;
+      left: 2px;
+      top: 5px;
+      cursor: pointer;
+    }
+
+    /*Navigation*/
+    #nav{
+      position: absolute; 
+      top: 30px; 
+      right:0; 
+      text-align: right; 
+      z-index:2;     
+    }
+
+    /*Nav-links*/
+    #nav .navbar-nav li a {
+      color: white;
+      cursor: pointer;
+    }
+
+    /*Nav-links:hover*/
+    #nav .navbar-nav li a:hover {
+      color: rgb(8, 41, 114);
+      cursor: pointer;
+    }
+
+    /*Hamburger icon*/
+    #hamburger{
+        top: 5px;
+        right: 3px;
+        text-align: right;
+        position: absolute;
+        color: white;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+   /*Top Nav*/
+  .info-nav{
+    position: absolute; 
+    top: 10px; 
+    right:0; 
+    text-align: right; 
+    margin-right: 2%; 
+  }
+
+  #ul-info-nav{
+    display: inline-flex; list-style-type: none;
+  }
+
+  /*Top Nav-links*/
+  .info-nav #ul-info-nav li{ 
+    padding-left: 22px;
+  }
+
+  /*Top Nav-links:hover*/
+ .info-nav #ul-info-nav li a{
+    cursor: pointer;
+    color:white; 
+    text-decoration: none;
+    z-index: 3; 
+    position: relative ;
+    font-family: 'News Cycle', sans-serif;
+    text-rendering: optimizeLegibility;
+  }
+
+  /*Logo, logo-links*/
+    .logo, logo-link{
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    cursor: pointer;
+    }
+
+    /*Navigation*/
+    #nav{
+        margin-top: 4%;
+        right: 1%;
+        text-align: right;
+        position: absolute;
+        color: white;
+        font-family: 'News Cycle', sans-serif;
+    }
+
+    /*Nav-links*/
+    #nav .navbar-nav li a {
+    color: white;
+    cursor: pointer;
+    text-align: right;
+    }
+
+    /*Nav-links:hover*/
+    #nav .navbar-nav li a:hover {
+    color: rgb(8, 41, 114);
+    cursor: pointer;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    h4{
+        font-size: 45px;
+      }
+    
+      p{
+        font-size: 20px;
+      }
+
+     /*Company Name on Carousel*/
+     #div-ontop-carousel-lg .carousel-h1{
+        font-size:xx-large;
+      }
+  
+      #div-ontop-carousel-lg .carousel-p{
+        color:white;
+        font-size: medium;
+      }
+  
+    .info-nav{
+      position: absolute; 
+      top: 10px; 
+      right:0; 
+      text-align: right; 
+      margin-right: 2%; 
+    }
+  
+    #ul-info-nav{
+      display: inline-flex; list-style-type: none;
+    }
+  
+    .info-nav #ul-info-nav li{
+      padding-left: 22px;
+    }
+  
+   .info-nav #ul-info-nav li a{
+      cursor: pointer;
+      color:white; 
+      text-decoration: none;
+      z-index: 3; 
+      position: relative ;
+      font-family: 'News Cycle', sans-serif;
+      text-rendering: optimizeLegibility;
+    }
+  
+    .logo, logo-link{
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    cursor: pointer;
+    }
+  
+    #nav{
+    top: 0px;
+    right: 3px;
+    text-align: right;
+    position: absolute;
+    color: white;
+    font-family: 'News Cycle', sans-serif;
+    }
+  
+    #nav .navbar-nav li a {
+    color: white;
+    cursor: pointer;
+    }
+  
+    #nav .navbar-nav li a:hover {
+    color: rgb(8, 41, 114);
+    cursor: pointer;
+    }
+  
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    h3{
+        font-size: 40px;
+    }
+
+    p{
+        font-size: 20px;
+    }
+
+    li a, .col-md-2 a{
+        font-size: 18px;
+        color: white;
+    }
+
+    /*Carousel Images*/
+    .carousel-inner{
+        height: 750px;
+    }
+
+    /*Top Navigation*/
+      .info-nav{
+        position: absolute; 
+        top: 10px; 
+        right:0; 
+        text-align: right; 
+        margin-right: 2%; 
+      }
+  
+      #ul-info-nav{
+        display: inline-flex; list-style-type: none;
+      }
+  
+      .info-nav #ul-info-nav li{
+        padding-left: 22px;
+      }
+  
+      .info-nav #ul-info-nav li a{
+          cursor: pointer;
+          color:white; 
+          text-decoration: none;
+          z-index: 3; 
+          position: relative ;
+          font-family: 'News Cycle', sans-serif;
+          text-rendering: optimizeLegibility;
+        }
+  
+    /*Logo*/    
+        .logo, logo-link{
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        left: 2px;
+        top: 5px;
+        cursor: pointer;
+        }
+  
+    /*Bottom Navigation*/
+        #nav{
+        top: 0px;
+        right: 3px;
+        text-align: right;
+        position: absolute;
+        color: white;
+        font-family: 'News Cycle', sans-serif;
+        }
+  
+        #nav .navbar-nav li a {
+        color: white;
+        cursor: pointer;
+        padding-right: 70px;
+        }
+  
+        #nav .navbar-nav li a:hover {
+        color: rgb(8, 41, 114);
+        cursor: pointer;
+        }
+
+      /*Dropdown*/
+      li ul.dropdown{
+        min-width: 100%;
+        background: transparent;
+        display: none;
+        min-height: fit-content;
+        left: 40px;
+        z-index: 4;
+      }
+
+      li:hover ul.dropdown {
+        display:flex;/* Display the dropdown */
+        padding: 0;
+        align-content: flex-end;
+      }
+
+      li ul.dropdown li {
+        display:flex;
+        align-content: flex-end;
+        right: 0px;
+      }
+
+  
+}

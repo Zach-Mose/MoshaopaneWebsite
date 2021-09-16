@@ -1,0 +1,760 @@
+/*Basic font*/
+@import url('https://fonts.googleapis.com/css2?family=News+Cycle:wght@700&display=swap');
+
+
+#cimg{
+  position: relative; 
+  top:0px; 
+  height: 200px;
+}
+
+#row-p20-links a{
+  font-size: 18px;
+  color : white;
+}
+
+.field:focus{
+  background-color: #fff;
+  border: 2px solid rgba(30, 85, 250, 0.47);
+
+}
+.area{
+  min-height: 150px;
+}
+
+.form-control {
+  margin-bottom: 5px;
+  padding-bottom: 15px;
+ 
+  padding-left: 120px;
+  padding-right: 20px;
+  width: 100%;
+  border: none;
+}
+
+.form-control input {
+  border: 2px solid #000000;
+  border-radius: 4px;
+  display: block;
+  font-family: 'onswald' sans-serif;
+  font-size: 14px;
+  padding: 10px;
+  width: 80%;
+  background-color: transparent;
+}
+
+.form-control textarea {
+  border: 2px solid #000000;
+  border-radius: 4px;
+  display: block;
+  font-family: 'oswald' sans-serif;
+  font-size: 14px;
+  padding: 10px;
+  width: 80%;
+  background-color: transparent;
+  align-items: center;
+}
+
+.form-control input:focus {
+  outline: 0;
+  border-color: rgb(88, 88, 88);
+  
+}
+
+.form-control.success input {
+  border-color: #2ecc71;
+}
+
+.form-control.error input {
+  border-color: #e74c3c;
+}
+
+.form-control.success textarea {
+  border-color: #2ecc71;
+}
+
+.form-control.error textarea {
+  border-color: #e74c3c;
+}
+
+
+.form-control i {
+  visibility: hidden;
+
+  top: 40px;
+  right: 10px;
+}
+
+.form-control.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.form-control small {
+  color: #e74c3c;
+
+  bottom: -3px;
+  left: 30%;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+
+
+/*Basic style for all devices*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    box-sizing: border-box;
+    text-decoration: none; 
+    font-family: 'News Cycle', sans-serif;
+}
+
+h3{
+    color: rgb(8, 41, 114);
+}
+
+#button, button{
+    background-color: rgb(8, 41, 114); 
+    color: white; 
+    border-color: rgb(8, 41, 114);
+}
+
+#cbutton{
+  padding: 10px 15px 10px 15px;
+  background-color: rgb(8, 41, 114); 
+    color: white; 
+    border-color: rgb(8, 41, 114);
+    border-radius: 5px;
+}
+
+#button:hover, button:hover, #cbutton:hover{
+  background-color: rgb(8, 41, 114); 
+  color: white; 
+  border-color: rgb(8, 41, 114);
+  box-shadow: 0 0 10px 5px rgb(8, 41, 114);
+}
+
+/*Navbar Links*/
+#navbarNav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 6px;
+  }
+
+  #navbarNav ul li a:hover, .carousel-control-prev:hover,
+   .carousel-control-next:hover {
+    color: rgb(8, 41, 114);
+  }
+
+  .info-nav #ul-info-nav li a:hover{
+    color: rgb(8, 41, 114);
+  }
+
+
+  /*Form style*/
+  .form input, .form textarea{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid rgb(8, 41, 114);;
+  }
+
+  .form input:hover, .form textarea:hover{
+    box-shadow: 5px 5px 5px 5px rgb(8, 41, 114);
+  }
+
+  /*Footer links*/
+  .col-md-2 a{
+    font-size: 14px;
+    color: white;
+  }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    /*Hide elements on small screens*/
+    .hr-nav-split, .info-nav, #div-ontop-carousel-lg
+    ,#div-ontop-carousel h1, #Service2, #About-lg{
+      display: none;
+    }
+
+    /*Logo*/
+  .logo, logo-link{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: 2px;
+    top: 5px;
+    cursor: pointer;
+  }
+
+  /*Navigation*/
+  #nav{
+    position: absolute; 
+    top: 0px; 
+    right:0; 
+    text-align: right; 
+    z-index:2;     
+  }
+
+  /*Nav-links*/
+  #nav .navbar-nav li a {
+    color: white;
+    cursor: pointer;
+  }
+
+  /*Nav-links hover*/
+  #nav .navbar-nav li a:hover {
+    color: rgb(8, 41, 114);
+    cursor: pointer;
+  }
+
+  /*Dropdown*/
+  li ul.dropdown{
+    min-width: 100%;
+    background: transparent;
+    display: none;
+  }
+
+  li:hover ul.dropdown {
+    display:inline-block; /* Display the dropdown */
+  }
+
+  li ul.dropdown li {
+      display: inline-block;
+  }
+
+  /*Hamburger Icon*/
+  #hamburger{
+      top: 5px;
+      right: 3px;
+      text-align: right;
+      position: absolute;
+      color: white;
+  }
+
+  .row .col-md-8 iframe {
+    padding-top: 20px;
+    width:100%;
+    padding-bottom: 20px;
+  }
+
+  .row .col-md-4{
+    padding-bottom: 20px;
+  }
+
+  /*Contact Us*
+  /*Form*/
+  .form-control{
+    width:100%;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .form-control input,.form-control textarea{
+    width:100%;
+    padding-left: 10px;
+    padding-right: 5px;
+  }
+
+  /*footer*/
+  .row .col-md-6{
+    padding-top: 20px;
+  }
+
+  /*Logo-fooer*/    
+  .row .col-md-6 #footer-logo{
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    /*Top Nav*/
+  .info-nav{
+    position: absolute; 
+    top: 10px; 
+    right:0; 
+    text-align: right; 
+    margin-right: 2%; 
+  }
+
+  #ul-info-nav{
+    display: inline-flex; list-style-type: none;
+  }
+
+  /*Top nav-links*/
+  .info-nav #ul-info-nav li{
+    padding-left: 22px;
+  }
+
+  /*Top nav-links:hover*/
+ .info-nav #ul-info-nav li a{
+    cursor: pointer;
+    color:white; 
+    text-decoration: none;
+    z-index: 3; 
+    position: relative ;
+    font-family: 'News Cycle', sans-serif;
+    text-rendering: optimizeLegibility;
+  }
+
+
+  /*Logo*/
+  .logo, logo-link{
+      height: 50px;
+      width: 50px;
+      position: absolute;
+      left: 2px;
+      top: 5px;
+      cursor: pointer;
+    }
+
+    /*Navigation*/
+    #nav{
+      position: absolute; 
+      top: 30px; 
+      right:0; 
+      text-align: right; 
+      z-index:2;     
+    }
+
+    /*Nav-links*/
+    #nav .navbar-nav li a {
+      color: white;
+      cursor: pointer;
+    }
+
+    /*Nav-links:hover*/
+    #nav .navbar-nav li a:hover {
+      color: rgb(8, 41, 114);
+      cursor: pointer;
+    }
+
+    /*Hamburger icon*/
+    #hamburger{
+        top: 5px;
+        right: 3px;
+        text-align: right;
+        position: absolute;
+        color: white;
+    }
+
+    #row-p20-links{
+      padding-top: 20px;
+      display: list-item;
+      list-style: none;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #cimg{
+    height: 250px;
+    box-shadow: 0 10px 10px -5px;
+  }
+   /*Top Nav*/
+  .info-nav{
+    position: absolute; 
+    top: 10px; 
+    right:0; 
+    text-align: right; 
+    margin-right: 2%; 
+  }
+
+  #ul-info-nav{
+    display: inline-flex; list-style-type: none;
+  }
+
+  /*Top Nav-links*/
+  .info-nav #ul-info-nav li{ 
+    padding-left: 22px;
+  }
+
+  /*Top Nav-links:hover*/
+ .info-nav #ul-info-nav li a{
+    cursor: pointer;
+    color:white; 
+    text-decoration: none;
+    z-index: 3; 
+    position: relative ;
+    font-family: 'News Cycle', sans-serif;
+    text-rendering: optimizeLegibility;
+  }
+
+  /*Logo, logo-links*/
+    .logo, logo-link{
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    cursor: pointer;
+    }
+
+    /*Navigation*/
+    #nav{
+        margin-top: 4%;
+        right: 1%;
+        text-align: right;
+        position: absolute;
+        color: white;
+        font-family: 'News Cycle', sans-serif;
+    }
+
+    /*Nav-links*/
+    #nav .navbar-nav li a {
+    color: white;
+    cursor: pointer;
+    text-align: right;
+    }
+
+    /*Nav-links:hover*/
+    #nav .navbar-nav li a:hover {
+    color: rgb(8, 41, 114);
+    cursor: pointer;
+    }
+
+    /*Dropdown*/
+    li ul.dropdown{
+      min-width: 100%;
+      background: transparent;
+      display: none;
+      min-height: fit-content;
+      left: 40px;
+      z-index: 4;
+    }
+
+    li:hover ul.dropdown {
+      display:flex;/* Display the dropdown */
+      padding: 0;
+      align-content: flex-end;
+    }
+
+    li ul.dropdown li {
+      display:flex;
+      align-content: flex-end;
+      padding-right: 40px;
+    }
+
+    /*Address & Map*/
+    #Addr-div{
+      padding-top:40px;
+      padding-bottom: 40px;
+      background: white;
+      box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    }
+
+    .col-md-8{
+      padding-top: 10px;
+      padding-bottom: 20px;
+      padding-left: 70px;
+      
+    }
+    .col-md-4{
+      padding-left: 10px;
+    }
+
+    /*Map iframe*/
+    .col-md-8 iframe{
+      width: 90%;
+      height: 250px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    /*Contact*/
+    #contactdiv{
+      background-color: white;
+    }
+
+    .form{
+      padding-top:50px;
+    }
+
+    .form-control{
+      background-color: white;
+    }
+
+    .col-md-2 {
+    padding: 0px 0px 0px 0px;
+  }
+
+  #row-p20{
+    padding-top: 20px;
+  }
+
+    /*footer Section*/
+  .row .col-md-6 h4{
+    color: white; 
+    text-decoration: wavy;
+    padding-top: 30px;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  /*Logo-fooer*/    
+  .row .col-md-6 #footer-logo{
+      height: 100px;
+      width: 100px;
+      cursor: pointer;
+  }
+
+  #footer-ql-heading{
+    font-size: 30px;
+  }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    h4{
+        font-size: 45px;
+      }
+    
+      p{
+        font-size: 20px;
+      }
+
+     /*Company Name on Carousel*/
+     #div-ontop-carousel-lg .carousel-h1{
+        font-size:xx-large;
+      }
+  
+      #div-ontop-carousel-lg .carousel-p{
+        color:white;
+        font-size: medium;
+      }
+  
+    .info-nav{
+      position: absolute; 
+      top: 10px; 
+      right:0; 
+      text-align: right; 
+      margin-right: 2%; 
+    }
+  
+    #ul-info-nav{
+      display: inline-flex; list-style-type: none;
+    }
+  
+    .info-nav #ul-info-nav li{
+      padding-left: 22px;
+    }
+  
+   .info-nav #ul-info-nav li a{
+      cursor: pointer;
+      color:white; 
+      text-decoration: none;
+      z-index: 3; 
+      position: relative ;
+      font-family: 'News Cycle', sans-serif;
+      text-rendering: optimizeLegibility;
+    }
+  
+    .logo, logo-link{
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    cursor: pointer;
+    }
+  
+    #nav{
+    top: 0px;
+    right: 3px;
+    text-align: right;
+    position: absolute;
+    color: white;
+    font-family: 'News Cycle', sans-serif;
+    }
+  
+    #nav .navbar-nav li a {
+    color: white;
+    cursor: pointer;
+    }
+  
+    #nav .navbar-nav li a:hover {
+    color: rgb(8, 41, 114);
+    cursor: pointer;
+    }
+  
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #ContactUsHeading{
+      display: none;
+    }
+    h3{
+        font-size: 40px;
+    }
+
+    p{
+        font-size: 20px;
+    }
+
+    li a, .col-md-2 a{
+        font-size: 18px;
+        color: white;
+    }
+
+    /*Carousel Images*/
+    .carousel-inner{
+        height: 750px;
+    }
+
+    /*Top Navigation*/
+      .info-nav{
+        position: absolute; 
+        top: 10px; 
+        right:0; 
+        text-align: right; 
+        margin-right: 2%; 
+      }
+  
+      #ul-info-nav{
+        display: inline-flex; list-style-type: none;
+      }
+  
+      .info-nav #ul-info-nav li{
+        padding-left: 22px;
+      }
+  
+      .info-nav #ul-info-nav li a{
+          cursor: pointer;
+          color:white; 
+          text-decoration: none;
+          z-index: 3; 
+          position: relative ;
+          font-family: 'News Cycle', sans-serif;
+          text-rendering: optimizeLegibility;
+        }
+  
+    /*Logo*/    
+        .logo, logo-link{
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        left: 2px;
+        top: 5px;
+        cursor: pointer;
+        }
+  
+    /*Bottom Navigation*/
+        #nav{
+        top: 0px;
+        right: 3px;
+        text-align: right;
+        position: absolute;
+        color: white;
+        font-family: 'News Cycle', sans-serif;
+        }
+  
+        #nav .navbar-nav li a {
+        color: white;
+        cursor: pointer;
+        padding-right: 70px;
+        }
+  
+        #nav .navbar-nav li a:hover {
+        color: rgb(8, 41, 114);
+        cursor: pointer;
+        }
+
+      /*Dropdown*/
+      li ul.dropdown{
+        min-width: 100%;
+        background: transparent;
+        display: none;
+        min-height: fit-content;
+        left: 40px;
+        z-index: 4;
+      }
+
+      li:hover ul.dropdown {
+        display:flex;/* Display the dropdown */
+        padding: 0;
+        align-content: flex-end;
+      }
+
+      li ul.dropdown li {
+        display:flex;
+        align-content: flex-end;
+        right: 0px;
+      }
+
+      #row-p20{padding-top: 20px;}
+
+      #Contact-Group .col-md-2{
+        padding-top: 200px;
+        padding-right: 60px;
+        padding-bottom: 10px;
+      }
+
+      /*Map*/
+      iframe{
+        margin-left: 8%; 
+        margin-top: 5%; 
+        margin-bottom: 5%; 
+        margin-right: 8%;
+        width: 80%; 
+        height: 400px; 
+        box-shadow: -5px -5px 10px rgb(8, 41, 114);
+      }
+
+      /*form*/
+      .form{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 200px;
+        padding-right: 200px;
+      }
+
+      .col-md-4{
+        padding-top: 10%;
+        text-align: justify;
+      }
+
+      #row-p20{padding-top: 20px;}
+
+        #row-p20-links{
+          padding-top: 20px;
+          display:inline-flex;
+          color: white;
+        }
+
+      /*Logo-fooer*/    
+      .row .col-md-6 #footer-logo{
+        height: 100px;
+        width: 100px;
+        cursor: pointer;
+        padding-bottom: 5px;
+    }
+
+    #footer-ql-heading{
+      font-size: 35px;
+    }   
+
+  
+}
