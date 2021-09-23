@@ -58,7 +58,7 @@
         <ul id="ul-info-nav">
             <li><a><i class="fa fa-phone" id="fa-fa" aria-hidden="true">&nbsp;</i>015-846-8446</a></li>    
             <li><a  href="mailto:nzmosehle@gmail.com?Subject=subject here&Body=bodytext">
-              <i class="fa fa-envelope" id="fa-fa" aria-hidden="true">&nbsp;</i>nzmosehle@gmail.com</a></li>
+              <i class="fa fa-envelope" id="fa-fa" aria-hidden="true">&nbsp;</i>rachelr@moshoapanecon.co.za</a></li>
             <li><a href="http://goo.gl/maps/SjBekXLPa8gvV8v9A">
               <i class="fa fa-location-arrow" id="fa-fa" aria-hidden="true">&nbsp;</i>89 Hans Van Rensburg, Polokwane, South Africa</a></li>
         </ul>
@@ -172,34 +172,36 @@
             <div class="col-md-6" id="form-col">
                 
                 <h3>Let's Chat</h3>
-                <form>
-                    <div class="form-row">
-                      <div class="col">
-                        <input type="text" class="form-control" placeholder="First name">
-                      </div>
-                    </div>
-                    <br>
-            
-                    <div class="form-row">
-                        <div class="col">
-                          <input type="text" class="form-control" placeholder="Phone number">
-                        </div>
-                    </div>
-                    <br>
-            
-                    <div class="form-row">
-                        <div class="col">
-                          <input type="text" class="form-control" placeholder="Email">
-                        </div>
-                    </div>
-                    <br>
-            
-                    <div class="form-group">
-                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Your message here" rows="4"></textarea>
-                    </div>
-                    <br>
-                    <button class="btn btn-primary" style="background-color:rgba(0, 4, 255, 0.452); color: white; width: 100%;">Send</button>
-                </form>
+                <form action="/contact" method="POST"
+                class="form" id="form"> 
+                
+                <div class="form-control">
+                    <input type="name" placeholder="Name" id="fullname" name="fullname"/>                 
+                    <small>Error message</small>
+                </div>
+  
+                <div class="form-control">
+                    <input type="contact" placeholder="Phone number" id="contact" name="contact" />
+                    <small>Error message</small>
+                </div>
+                
+                <div class="form-control">
+                    <input type="email" placeholder="Email" id="email" name="email" />
+                    <small>Error message</small>
+                </div>
+  
+                <div class="form-control">
+                    <textarea class="field area" placeholder="Message" name="message" id="message2"></textarea>
+                    <small>Error message</small>
+                </div>
+                
+                <input type="submit" id="cbutton" value="SEND"/>
+            </form>
+                    <!--
+                        <button class="btn btn-primary" style="background-color:rgba(0, 4, 255, 0.452); color: white; width: 100%;">Send</button>
+                    -->
+                    
+
                 
             </div>
             <div class="col-md-4"> 
@@ -264,7 +266,7 @@
     </div>
     <!--/Footer-->
 
-
+    <script src="contact.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

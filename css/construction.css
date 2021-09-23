@@ -1,6 +1,113 @@
 /*Basic font*/
 @import url('https://fonts.googleapis.com/css2?family=News+Cycle:wght@700&display=swap');
 
+/*Style for form validation*/
+.field:focus{
+  background-color: #fff;
+  border: 2px solid rgba(30, 85, 250, 0.47);
+
+}
+.area{
+  min-height: 20px;
+}
+
+.form-control {
+  margin-bottom: 5px;
+  padding-bottom: 2px;
+  padding-left: 2px;
+  padding-right: 2px;
+  width: 100%;
+  border: none;
+  background: rgb(8, 41, 114);;
+}
+
+.form-control input {
+  border: 3px solid white;
+  border-radius: 4px;
+  display: block;
+  font-family: 'onswald' sans-serif;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+  background-color: white;
+}
+
+.form-control textarea {
+  border: 3px solid white;
+  border-radius: 4px;
+  display: block;
+  height: 100px;
+  font-family: 'oswald' sans-serif;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+  background-color: white;
+  align-items: center;
+}
+
+.form-control input:focus {
+  outline: 0;
+  border-color: rgb(88, 88, 88);
+  
+}
+
+.form-control.success input {
+  border-color: #2ecc71;
+}
+
+.form-control.error input {
+  border-color: #e74c3c;
+}
+
+.form-control.success textarea {
+  border-color: #2ecc71;
+}
+
+.form-control.error textarea {
+  border-color: #e74c3c;
+}
+
+
+.form-control i {
+  visibility: hidden;
+
+  top: 40px;
+  right: 10px;
+}
+
+.form-control.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.form-control small {
+  color: #e74c3c;
+
+  bottom: -3px;
+  left: 30%;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+
+/*contact button*/
+#cbutton{
+  padding: 10px 15px 10px 15px;
+  background-color: rgb(8, 41, 114); 
+    color: white; 
+    border-color: rgb(8, 41, 114);
+    border-radius: 5px;
+}
+
+
 /*Basic style for all devices*/
 *{
     margin: 0;
@@ -14,6 +121,8 @@
     text-decoration: none; 
     font-family: 'News Cycle', sans-serif;
 }
+
+
 
 h3{
     color: rgb(8, 41, 114);
@@ -54,6 +163,15 @@ button{
     ,#div-ontop-carousel h1, #Service2, #About-lg{
       display: none;
     }
+
+    /*Page haeding*/
+#ContactUsHeading{
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform : translate(-50%, -50%);
+  color: white;
+}
 
     /*Logo*/
   .logo, logo-link{
@@ -259,6 +377,15 @@ button{
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+     /*Page haeding*/
+    #ContactUsHeading{
+      position: absolute;
+      top: 15%;
+      left: 50%;
+      transform : translate(-50%, -50%);
+      color: white;
+      font-size: xx-large;
+    }
 
   /*Carousel Images*/
   #nav-img{
@@ -598,6 +725,14 @@ button{
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  /*Page haeding*/
+    #ContactUsHeading{
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform : translate(-50%, -50%);
+      color: white;
+    }
 
     h3{
         font-size: 40px;
@@ -616,7 +751,7 @@ button{
     #nav-img{
       position: relative; 
       top:0px; 
-      height: 600px;
+      height: 400px;
     }
 
     /*Top Navigation*/
